@@ -11,6 +11,7 @@ Rho方法使用一种floid环的方法来寻找碰撞。该方法的主要优点
 
 ![image](https://user-images.githubusercontent.com/57925688/181756735-f73524d7-d515-44b1-a8ee-59ceca700a39.png)
 
+注：此方法参考了一个Rho方法的实现，代码地址https://github.com/DevNathan/RhoPollard.git
 
 依旧是首先使用前32位哈希值，寻找碰撞。如下图所示：
 
