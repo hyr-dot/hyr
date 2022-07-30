@@ -20,3 +20,10 @@ Rho方法使用一种floid环的方法来寻找碰撞。该方法的主要优点
 结果如下，时间约为2分钟。
 
 ![image](https://user-images.githubusercontent.com/57925688/181754917-1aba3bc1-f082-453a-b245-40b2bb7f576c.png)
+
+### 48bit 
+测试寻找48bit哈希值的用时，结果如下图所示：
+
+![image](https://user-images.githubusercontent.com/57925688/181925995-137a7bb7-533a-42e7-930a-0e99735202b2.png)
+
+时间约为6.7h，但最终也能得到结果。
