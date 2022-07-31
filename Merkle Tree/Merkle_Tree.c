@@ -135,7 +135,7 @@ MerkleTree* Merkle_Tree_Init(MerkleTree* mt, int* arr, int nums)
 					New_Node(tmp, i);
 					p->right = tmp;
 					tmp->parent = p;
-					printf("新中间节点 [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, tmp->depth, tmp->data);
+					printf("New Intermediate node [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, tmp->depth, tmp->data);
  
 					p = p->right;
 					i = p->depth - 1;		// 更新depth - 1 
@@ -175,13 +175,13 @@ MerkleTree* Merkle_Tree_Init(MerkleTree* mt, int* arr, int nums)
 				New_Node(mt, tmp->depth + 1);
 				mt->left = tmp; 		// 头节点赋值 
 				tmp->parent = mt;
-				printf("新建头节点 [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, mt->depth, mt->data);
+				printf("Create head node [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, mt->depth, mt->data);
 
 				// 创建头节点下的第一个右子节点 
 				New_Node(tmp, mt->depth - 1);
 				mt->right = tmp;
 				tmp->parent = mt;
-				printf("新中间节点 [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, tmp->depth, tmp->data);
+				printf("New Intermediate node [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, tmp->depth, tmp->data);
 
 				p = mt->right;
 				i = p->depth - 1;
@@ -192,7 +192,7 @@ MerkleTree* Merkle_Tree_Init(MerkleTree* mt, int* arr, int nums)
 					New_Node(tmp, i);
 					p->left = tmp;
 					tmp->parent = p;
-					printf("新中间节点 [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, tmp->depth, tmp->data);
+					printf("New Intermediate node [%d] tree_depth=%d, depth=%d, data=%-6d \n", __LINE__, mt->depth, tmp->depth, tmp->data);
 
 					p = p->left;
 					i--;
